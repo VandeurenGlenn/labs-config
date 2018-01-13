@@ -1,0 +1,29 @@
+{
+  "name": "labs-config",
+  "version": "0.1.0-alpha",
+  "main": "index.js",
+  "repository": "https://github.com/vandeurenglenn/labs-config",
+  "author": "Glenn Vandeuren <vandeurenglenn@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "backed": {
+    "bundles": [
+      {
+        "src": "src/index.js",
+        "dest": "config.js",
+        "format": "cjs",
+        "plugins": {
+          "commonjs": {}
+        }
+      }
+    ]
+  },
+  "dependencies": {
+    "crypto-io-utils": "^0.1.2-alpha.1",
+    "uuid": "^3.1.0"
+  },
+  "devDependencies": {
+    "rollup-plugin-commonjs": "^8.2.6",
+    "tape": "^4.8.0"
+  }
+}
